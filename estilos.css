@@ -1,0 +1,66 @@
+/* REFERENCIANDO CSS CON PALABRA CLAVE (ETIQUETAS) */
+
+h1{
+    font-size: 32px;
+    color: darkslategrey;
+    font-style: unset;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+div{
+    background-color: brown;
+    height: 250px;
+    width: 250px;
+}
+
+
+/* REFERENCIANDO CSS CON ID */
+#subTitulo{
+    color: yellowgreen;
+    font-size: 65px;
+}
+
+/* REFERENCIANDO CSS CON CLASE */
+.texto1{
+    font-size: 2rem;
+    color: blue;
+    text-decoration: none;
+}
+
+/* REFERENCIANDO CSS CON CLASE  */
+.elemento2{
+    background-color: #09197c;
+    width: 25%;
+    height: 250px;
+}
+
+/* REFERENCIANDO CSS CUANDO UNA ETIQUETA ESTÁ DENTRO DE OTRA, COMO SI FUERA EL HIJO */
+/* El signo > es un seletor  */
+/* lo de nth-child es para aplicar el CSS solamente al segundo hijo (2) como indica el parentesis xd */
+/* La palabra clave odd sirve para aplicar CSS de forma intercalada a los elementos que son impares */
+/* La palabra clave even sirve para aplicar CSS de forma intercalada a los elementos que son pares */
+/* 
+
+.elemento2 > p:nth-child(even){
+    font-size: 18px;
+    color: white;
+    font-style: italic;
+} */
+p.elemento2 > p.mitexto2{
+    font-size: 18px;
+    color: white;
+    font-style: italic;
+}
+/* REFERENCIANDO CSS UN ELEMENTO A TRAVES DE SU ATRIBUTO */
+p[name="miTexto"]{
+    font-size: 80px;
+}
+
+/* SELECTOR + REFERENCIA CSS al elemento de la derecha cuando es 
+inmediatamente precedido por el de la izuierda. 
+Ambos elementos deben compartir el mismo padre */
+
+ p.mitexto2 + p{
+     color: coral;
+ } 
